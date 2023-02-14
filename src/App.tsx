@@ -1,12 +1,15 @@
-import React from 'react';
-import './App.css';
-import Home from './pages/home';
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import "./App.css";
+import AppRoutes from "./Components/routes/Routes";
 
 function App() {
   return (
-    <>
-      <Home/>
-    </>
+    <Router>
+      <div className="centeredClass">
+        <AppRoutes />
+      </div>
+    </Router>
   );
 }
 
