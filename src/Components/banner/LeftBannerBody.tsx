@@ -1,6 +1,6 @@
 import React from "react";
 import useWindowDimensions from "../../hooks/Dimensions";
-import { ScreenComponent } from "../svgComponents/ScreenComponent";
+// import { ScreenComponent } from "../svgComponents/ScreenComponent";
 
 export const LeftBannerBody = () => {
   const { windowDimensions } = useWindowDimensions();
@@ -11,7 +11,7 @@ export const LeftBannerBody = () => {
         Here’s how to book an appointment:
       </h1>
 
-      <ScreenComponent
+      {/* <ScreenComponent
         height={
           (windowDimensions.width * 28) / 100 > 370
             ? (windowDimensions.width * 28) / 100 > 550
@@ -26,7 +26,7 @@ export const LeftBannerBody = () => {
               : (windowDimensions.width * 15) / 100
             : 200
         }
-      />
+      /> */}
     </div>
   );
 };

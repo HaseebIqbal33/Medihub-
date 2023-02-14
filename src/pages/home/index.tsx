@@ -14,17 +14,15 @@ const Home: React.FC = () => {
     <div>
       <HeroSection
         children={
-          <div className="text-center mt-32 pb-44 ">
-            <h1 className="text-5xl font-extrabold">MediHub</h1>
-            <h6 className="text-orange-primary">FULLY IMMERSED HEALTHCARE</h6>
+          <div className="text-center pt-44 mb-60">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">MediHub</h1>
+            <h6 className="text-orange-primary text-sm sm:text-lg lg:text-xl font-normal">FULLY IMMERSED HEALTHCARE</h6>
           </div>
         }
       />
       <div className="bg-black-primary h-full w-full relative mt-5">
         <Menu />
-        <div className="pb-6">
-          <HomeBody />
-        </div>
+        <HomeBody />
         <div className="flex justify-center mr-6">
           <div className="w-full flex flex-col">
             <div

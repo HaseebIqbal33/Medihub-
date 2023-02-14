@@ -30,7 +30,7 @@ const MennuBar = () => {
   }, [windowDimensions.width]);
   return (
     <div className="flex justify-center">
-      <div className="flex justify-evenly mt-8 w-5/6">
+      <div className="flex justify-evenly w-full">
         <Chair {...dimendions} />
         <Face {...dimendions} />
         <Body {...dimendions} />

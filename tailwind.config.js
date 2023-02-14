@@ -18,6 +18,10 @@ module.exports = {
         contactUsDoctor: "url('/src/assets/svgs/ContactUsDoctor.svg')",
       },
     },
+    fontFamily: {
+      sans: ['Nexa', 'system-ui'],
+      serif: ['Inter', 'Georgia'],
+    },
     screens: {
       xs: "480px",
       sm: "640px",

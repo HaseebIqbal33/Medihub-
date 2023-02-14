@@ -8,7 +8,7 @@ export const HomeBody = () => {
   const { windowDimensions } = useWindowDimensions();
 
   return (
-    <div className="h-full ">
+    <div>
       <HomeBodyUpperSection />
       <div className="py-10 flex justify-center">
         {windowDimensions.width < 550 ? (

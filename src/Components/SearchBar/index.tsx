@@ -3,19 +3,19 @@ import MennuBar from "../menuBar";
 
 export const SearhBar = () => {
   return (
-    <div className="m7-10 my-4">
-      <div className="flex justify-evenly">
-        <div className="pt-2 relative  text-black-900 w-5/12">
+    <div className="m-6 md:m-8">
+      <div className="flex flex-col md:flex-row justify-between">
+        <div className="relative md:w-[49%] w-full mb-5 md:mb-0">
           <input
-            className="border-2 border-gray-300 bg-gray-300 h-9 pl-8 pr-4 rounded-md text-sm focus:outline-none w-full"
+            className=" bg-gray-300 h-11 pl-12 pr-6 rounded-xl text-black-900 placeholder-gray-900 text-sm focus:outline-none w-full"
             type="search"
             name="search"
-            placeholder="Search"
+            placeholder="Search Doctor, Conditions or Procedures"
           />
-          <button type="submit" className="absolute left-2 top-0 mt-4 mr-4">
+          <button type="submit" className="absolute left-2 top-[50%] translate-y-[-50%]">
             <svg
               aria-hidden="true"
-              className="w-5 h-5 text-black-900 "
+              className="w-6 h-6 text-black-900 "
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -30,17 +30,17 @@ export const SearhBar = () => {
             </svg>
           </button>
         </div>
-        <div className="pt-2 relative  text-black-900 w-1/2 flex gap-x-4">
-          <div className="w-4/5">
+        <div className="relative md:w-[49%] w-full flex gap-x-4">
+          <div className="w-full">
             <input
-              className="border-2 border-gray-300 bg-gray-300 h-9 pl-8 pr-4 rounded-md text-sm focus:outline-none w-full "
+              className=" bg-gray-300 h-11 text-black-900 placeholder-gray-900 pl-12 pr-4 rounded-xl text-sm focus:outline-none w-full "
               type="search"
-              name="search"
-              placeholder="Search"
+              name="location"
+              placeholder="Set Your Location"
             />
-            <button type="submit" className="absolute left-2 top-0 mt-4 mr-4">
+            <button type="submit" className="absolute left-2 top-[50%] translate-y-[-50%]">
               <svg
-                className="w-5 h-5 text-black-900 "
+                className="w-6 h-6 text-black-900 "
                 viewBox="0 0 10 12"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,9 +53,9 @@ export const SearhBar = () => {
               </svg>
             </button>
           </div>
-          <button className="bg-gradient-to-b from-primary to-gray-900 rounded-md h-9 ">
+          <button className="bg-gradient-to-b from-primary to-gray-900 rounded-lg h-11 w-12 text-center">
             <svg
-              className="w-6 h-6 m-2"
+              className="w-[22px] h-[22px] inline-block"
               viewBox="0 0 10 10"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ export const SearhBar = () => {
           </button>
         </div>
       </div>
-      <h1 className="text-gray-200  xs:text-2xl font-bold text-center mt-5">
+      <h1 className="text-gray-200 text-lg  sm:text-xl md:text-2xl font-normal text-center my-5">
         {" "}
         Search Doctor by Health Condition
       </h1>
