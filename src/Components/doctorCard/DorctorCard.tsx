@@ -10,13 +10,17 @@ export const DorctorCard = () => {
   const [show, setShow] = useState(false);
   const { windowDimensions } = useWindowDimensions();
   return (
-    <div className="flex justify-center bg-secondary rounded-lg shadow-md ">
+    <div className="flex  bg-secondary rounded-lg shadow-md ">
       {<Emailmodal showModal={show} setShowModal={setShow} />}
-      <div className="flex justify-center flex-col w-11/12 ">
-        <div className="flex flex-col md:flex-row gap-5 lg:items-center p-6  w-full lg:justify-between  ">
+      <div className="flex justify-center flex-col w-full ml-5 ">
+        <div className="flex flex-col md:flex-row gap-5 lg:items-center py-6  w-[97%] lg:justify-between  ">
           <div className="flex flex-col md:flex-row justify-between  ">
-            <div className="w-24 h-24 rounded-full overflow-hidden mr-6">
-              <img src={picImg} alt="Doctor's Profile  " />
+            <div className="w-36 h-30 rounded-full overflow-hidden mr-6">
+              <img
+                src={picImg}
+                alt="Doctor's Profile "
+                className="w-full h-full"
+              />
             </div>
             <div className="w-96 text-black-secondary">
               <h3 className="font-bold text-lg ">Assist. Prof. Dr. Jane Doe</h3>
@@ -48,14 +52,18 @@ export const DorctorCard = () => {
           <div className="flex flex-col justify-start items-start  h-full">
             <Button
               label="Video Consultation"
-              className="bg-yellow  text-white  text-center py-3 px-8 rounded-lg inline-flex items-center shadow-lg  "
+              className="bg-yellow  text-white  text-center py-3 px-8 rounded-lg inline-flex items-center shadow-lg  w-[94%] sm:w-1/2 md:w-full "
               onClick={() => setShow(!show)}
+              spanClass=" m-auto"
             />
           </div>
         </div>
-        <div className="bg-gray-500 sm:w-1/2 rounded-md mb-6 sm:ml-6 md:ml-0">
+        <div>
+          <h1 className="font-bold my-3 md-3 ">Latest Review</h1>
+        </div>
+        <div className="bg-gray-500 w-11/12 sm:w-1/2 rounded-md mb-6 ">
           {" "}
-          <p className="text-xs my-3 md-3 px-2">
+          <p className="text-xs my-3 md-3 px-2 ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod
           </p>

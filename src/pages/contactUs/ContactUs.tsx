@@ -5,7 +5,7 @@ import { ContactUsForm } from "../../Components/contactUsForm/ContactUsForm";
 export const ContactUsHero = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between mt-16 ">
-      <div className=" mt-36 pb-40 w-11/12 md:w-2/5 m-auto ">
+      <div className=" mt-36 pb-40 w-11/12 md:w-2/5 m-auto mb-16 ">
         <h1 className="text-5xl font-extrabold mb-10">
           The Best Medical Care You Can Get!
         </h1>

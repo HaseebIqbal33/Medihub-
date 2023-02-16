@@ -15,8 +15,12 @@ const Home: React.FC = () => {
       <HeroSection
         children={
           <div className="text-center pt-44 mb-60">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">MediHub</h1>
-            <h6 className="text-orange-primary text-sm sm:text-lg lg:text-xl font-normal">FULLY IMMERSED HEALTHCARE</h6>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
+              MediHub
+            </h1>
+            <h6 className="text-orange-primary text-sm sm:text-lg lg:text-xl font-normal">
+              FULLY IMMERSED HEALTHCARE
+            </h6>
           </div>
         }
       />

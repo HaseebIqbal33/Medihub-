@@ -16,7 +16,7 @@ export const DoctorList = () => {
       </div>
 
       <div className="w-11/12 mx-auto">
-        <div className="bg-gray-300 flex justify-center mt-44 rounded-lg">
+        <div className="bg-gray-300 flex justify-center mt-44 rounded-lg ">
           <div className="w-11/12 flex flex-col gap-5 my-20 ">
             <BreadCrums />
             <div>
@@ -28,10 +28,13 @@ export const DoctorList = () => {
               />
             </div>
             <DoctorListMenu />
-            <DorctorCard />
+            <div className="w-full md:ml-3 xl:ml-10">
+              <DorctorCard />
+            </div>
+
             <div className="flex flex-col justify-center bg-secondary rounded-lg shadow-md mb-5 ">
               <div className="m-4">
-                <div className="flex justify-between mb-4 sm:ml-16">
+                <div className="flex justify-between mb-4 ml-2">
                   <div className="flex items-center">
                     <Crown />
                     <h1 className="text-2xl font-bold ml-3">
@@ -43,7 +46,7 @@ export const DoctorList = () => {
                   </div>
                 </div>
 
-                <div className="flex gap-8  3xl:gap-15 flex-wrap w-11/12 sm:ml-16  ">
+                <div className="flex gap-8  3xl:gap-15 flex-wrap w-11/12 ml-3  ">
                   {[...Array(5)].map((item, key) => {
                     return (
                       <BokingCard

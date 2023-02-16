@@ -14,7 +14,7 @@ export const Specialist = ({
 }: ISpecialist) => {
   return (
     <div className="flex flex-col my-5">
-      <h1 className="xs:text-lg sm:text-2xl font-bold">
+      <h1 className="xs:text-lg sm:text-2xl 2xl:text-4xl font-bold">
         {total} Best {place} in {specialize}
       </h1>
       <p className="text-sm"> {description}</p>

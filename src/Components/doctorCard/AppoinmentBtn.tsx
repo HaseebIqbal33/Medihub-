@@ -7,7 +7,7 @@ interface IAppoinmentBtn {
 
 export const AppoinmentBtn = ({ fee, Availablity }: IAppoinmentBtn) => {
   return (
-    <div className="border border-black-secondary rounded-lg w-full md:w-[36%] lg:w-[32%] p-1">
+    <div className="border border-black-secondary rounded-lg w-full md:w-[36%] lg:w-[32%] max-w-[300px]  p-1">
       <div className="flex flex-col m-1">
         <div className="flex justify-between">
           <div>
@@ -19,7 +19,7 @@ export const AppoinmentBtn = ({ fee, Availablity }: IAppoinmentBtn) => {
         </div>
         <div className="flex justify-between ml-1">
           <div className="flex items-center gap-x-2">
-            <div className="rounded-full h-2 w-2 bg-green"></div>
+            <div className="rounded-full h-2 w-2 bg-green ml-1"></div>
             <p className="text-green">{Availablity}</p>
           </div>
           <div>
